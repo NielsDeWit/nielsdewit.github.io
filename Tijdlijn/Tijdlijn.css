@@ -1,0 +1,291 @@
+/* Algemeen */
+html,body {
+    background-color: #84C2E2;
+    color: white; 
+    font-family: "Bahnschrift";
+    background-image: url(Images/Achtergrond.png);
+    background-size: 15%;
+}
+
+/* Eigen aanpassingen */
+.sidenav a.top{
+    background-color: #FDD16A;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.logonav{
+    padding: 10%;
+}
+
+.imgnav{
+    height: 17px;
+    width: 17px;
+}
+
+/* Side menu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: #0EB9E3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 22.5px;
+  color: White;
+  display: block;
+  transition: 0.3s;
+}
+
+.panel {
+  text-align: left;
+  background-color: #1288C9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+  font-size: 18px;
+}
+
+img.footer{
+    background-color: #FDD16A;
+}
+
+.sidenav a.footer{
+    margin-top: 130%;
+    background-color: #F9B659;
+    padding-top: 10px;
+}
+
+.sidenav a.footer2{
+    background-color: #F9B659;
+    padding-top: 10px;
+    margin-bottom: 
+}
+
+
+.sidenav a:hover {
+  color: #84C2E2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.accordion {
+  padding-left: 10%;
+  text-align: left;
+  font-family: "Bahnschrift";
+  color: white;
+  background-color: #0EB9E3;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-bottom: bottom: 5px;
+  border: none;
+  outline: none;
+  font-size: 22.5px;
+  transition: 0.3s;
+}
+
+.active, .accordion:hover {
+  color: #84C2E2;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; 
+  font-size: 22.5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+.container-main {
+    max-width:50%;  
+    width:50%; 
+    float:left; 
+    height:500px; 
+    overflow-x: scroll;
+    overflow-y: scroll;
+    background:#82C2E2; 
+    overflow:scroll;
+}
+
+@media screen and (max-width: 600px) {
+  .container-main {
+    width: 100%;
+  }
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+h5{
+    text-align: center;
+}
+
+p {
+    padding-left: 10%;
+    Padding-right: 10%;
+}
+
+footer {
+   text-align: center;
+   font-size: 15px;
+   Margin: 0px;
+   width: 100%;
+   background-color: #BA7420;
+   color: #FDD16A;
+   font-family:  "Bahnschrift";
+   
+}
+
+/*Lekker scrollen*/
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #D58A2C; 
+        border-radius: 1px;
+    }
+ 
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #FAB859; 
+        border-radius: 1px;
+    }
+
+
+.blue-bg {
+  background-color: #82C2E2;
+  color: white;
+  height: 100%;
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: #12BAE4;
+  color: white;
+  max-height: 50px;
+  z-index: 2;
+  box-shadow: 0 5px #999;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Verticaal*/
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 7px solid #FAB859;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+
+/*Horizontaal*/
+.timeline hr {
+  border-top: 7px solid #FAB859;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+
+/*Hoekje*/
+.timeline .corner {
+  border: 7px solid #FAB859;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}

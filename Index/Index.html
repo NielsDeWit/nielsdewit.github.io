@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Urban Delta's</title>
+        <link rel="icon" href="/Images/Logo-02.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="Index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">      
+    </head>
+        <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/Index/index.html" class="top">
+                    <img class="imgnav" src="/Images/Logo-02.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="/Tijdlijn/Tijdlijn.html">
+                    <img class="imgnav" src="/Images/KlokNavIcon-06-06.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/PiramideNavIcnon-06.png" alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="/OverNijl/OverNijl.html">Over de Nijl Delta</a>
+                        <a href="/KaartNijl/KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/RacketNavIcnon-06.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="/OverGalveston/OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="/KaartGalveston/KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="/Over_ons/OverOns.html" class="footer">
+                    <img class="imgnav" src="/Images/OverOnsNavIcnon-06.png" alt="Piramide" width="100%">
+                    Over ons</a>
+                <a href="/Literatuurlijst/Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="/Images/LiteratuurlijstNavIcon-06.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu--> 
+    
+    <body>
+        <h1>Urban Delta's</h1>
+        <h2>Een rivierdelta is het laatste stuk van een rivier voordat de rivier in een zee of meer terecht komt. In dit stuk land splijt de rivier zich in vele kleinere rivieren en is daarin bepalend voor het landschap en de steden om het landschap heen.<br><br> Op deze website wordt het verhaal van 2 delta's verteld: 
+        <a href="/OverGalveston/OverGalveston.html">
+        De Galveston Bay (Verenigde Staten) en de 
+        </a>
+        <a href="/OverNijl/OverNijl.html">
+        Nijldelta (Egypte)
+        </a>
+        . Allebei de delta's hebben op hun eigen manier het landschap en de steden daarom heen bepaald. Ontdek de verschillen op de 
+        <a href="/Tijdlijn/Tijdlijn.html">
+        Tijdlijn
+        </a>
+        van de Delta's, lees meer over één van de delta's en kijk waar het allemaal is gebeurd op de kaart.</h2>
+        
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    
+                        <div class="container">
+                            <p>
+                                <a href="/OverNijl/OverNijl.html">
+                                    <button class="button">
+                                        <img class="imgindex" src=/Index/Images/NijlDelta2.0.png>
+                                    </button>
+                                </a>    
+                            </p>
+                            
+                            <p>
+                                <a href="/KaartNijl/KaartNijl.html">
+                                    <button class="button">
+                                        <img class="imgindex" src=/Index/Images/GalKaart-04.png>
+                                    </button>
+                                </a>    
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    
+                        <div class="container">
+                            <p>
+                                <a href="/Tijdlijn/Tijdlijn.html">
+                                    <button class="button">
+                                        <img class="imgindex" src=/Index/Images/Index1-02.png>
+                                        <div class="Tijdlijn">
+                                        Tijdlijn
+                                        </div>
+                                    </button>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    
+                        <div class="container">
+                            <p>
+                            <a href="/OverGalveston/OverGalveston.html">
+                            <button class="button">
+                            <img class="imgindex" src=/Index/Images/Galveston2-02-02.png>
+                            </button></a></p>
+                            <p>
+                            <a href="/KaartGalveston/KaartGalveston.html">
+                            <button class="button">
+                            <img class="imgindex" src=/Index/Images/Kaart-04.png>
+                            </button></a></p>
+                        </div>
+                </div>
+            </div>
+        </div>   
+    </body>
+    
+    
+</html>

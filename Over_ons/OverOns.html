@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pirarocket | Over Ons</title>
+        <link rel="icon" href="/Images/Logo-02.png" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="OverOns.css">
+    </head>
+    
+    <body>
+         <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/Index/index.html" class="top">
+                    <img class="imgnav" src="/Images/Logo-02.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="/Tijdlijn/Tijdlijn.html">
+                    <img class="imgnav" src="/Images/KlokNavIcon-06-06.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/PiramideNavIcnon-06.png" alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="/OverNijl/OverNijl.html">Over de Nijl Delta</a>
+                        <a href="/KaartNijl/KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/RacketNavIcnon-06.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="/OverGalveston/OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="/KaartGalveston/KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="/Over_ons/OverOns.html" class="footer">
+                    <img class="imgnav" src="/Images/OverOnsNavIcnon-06.png" alt="Piramide" width="100%">
+                    Over ons</a>
+                <a href="/Literatuurlijst/Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="/Images/LiteratuurlijstNavIcon-06.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu-->
+        
+        <h1>Over Ons</h1>
+        <h2> Prirarocket is een websiteontwikkelaars bedrijf dat is opgericht in 2019 door Niels de Wit. Pirarocket heeft in haar korte bestaan al meerdere grote projecten succesvol afgesloten en is uitgegroeid tot een bedrijf met 3 werknemers.   </h2>
+        <br>
+        
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="Overonsimg">
+                        <img src="OverOns_Images/OverOnsFoto1.png" alt="Niels" style="width:100%">
+                    </div>
+                        <div class="container">
+                            <div class="naam">
+                                Niels de Wit
+                            </div>
+                            <p class="title">CEO & Oprichter</p>
+                            <p><i>"Achter elk saai boek verschuilt een prachtig verhaal"</i></p>
+                            <p><u>NielsW@Pirarocket.nl</u></p>
+                            <p><a href="https://www.linkedin.com/in/niels-de-wit-b84583194/#" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/_nomkey_/#" class="fa fa-instagram"></a>
+                                <a href="https://nl.pinterest.com/Nomkeytje/#" class="fa fa-pinterest"></a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    <div class="Overonsimg">
+                        <img src="OverOns_Images/OverOnsFoto2.png" alt="Nelis" style="width:100%">
+                    </div>
+                        <div class="container">
+                            <div class="naam">
+                                Nelis de Grijs
+                            </div>
+                            <p class="title">Developer</p>
+                            <p><i>"If it works<br> it ain't stupid"</i><br><br></p>
+                            <p><u>NelisG@Pirarocket.nl</u></p>
+                            <p><a href="https://www.linkedin.com/in/niels-de-wit-b84583194/#" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/_nomkey_/#" class="fa fa-instagram"></a>
+                                <a href="https://nl.pinterest.com/Nomkeytje/#" class="fa fa-pinterest"></a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                    <div class="Overonsimg">
+                    <img src="OverOns_Images/OverOnsFoto3.png" alt="Niles" style="width:100%">
+                    </div>
+                        <div class="container">
+                            <div class="naam">
+                                Niles de Zwart
+                            </div>
+                            <p class="title">Designer</p>
+                            <p><i>"Visualiseren verlaagt de drempel tot reageren"<br><br></i></p>
+                            <p><u>NilesZ@Pirarocket.nl</u></p>
+                            <p><a href="https://www.linkedin.com/in/niels-de-wit-b84583194/#" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/_nomkey_/#" class="fa fa-instagram"></a>
+                                <a href="https://nl.pinterest.com/Nomkeytje/#" class="fa fa-pinterest"></a>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <h1>Ook van Pirarocket:</h1>
+        <h2>
+        Naast het bouwen van eduactieve websites heeft Pirarocket houd PiraRocket zich ook bezig met het visualiseren van lastige vraagstukken, het animeren van uitlegvideo's en veel meer ander creatief werk. Hier onder een paar voorbeelden.
+        </h2>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <div class="naam">
+                                De Biernet<br> App
+                            </div>
+                            <p class="title">Opdrachtgever: <br>Biernet.nl</p>
+                            <p>Pirarocket heeft voor Biernet.nl een uitleg video mogen maken over hoe de nieuwe app van de, onder studenten, bekende webstie Biernet.nl.<br><br></p>
+                            <p><iframe frameborder="0"
+                                src="https://youtube.com/embed/kqBhPYaeQA4">
+                                </iframe>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <div class="naam">
+                                Stadspark In Het stadshart
+                            </div>
+                            <p class="title">Opdrachtgever: <br>Gemeente Almere</p>
+                            <p>Stadspark in het stadshart was een opdracht van de Gemeente Almere om te laten zien wat de effecten van groen op studeren is, in het kader van het nieuwe stadspark wat de gemeente gaat maken.<br><br></p>
+                            <p>
+                            <div class="infographic">
+                            <img src="OverOns_Images/Infographic.png" alt="Infographic" style="width:100%">
+                            </div>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <div class="naam">
+                                Stadspark in het Stadshart
+                            </div>
+                            <p class="title">Opdrachtgever: <br>Anca de Vries</p>
+                            <p>In The Pan Out Of The Pan was een animatie opdracht om het nieuwe spel 'In the Pan Out of the Pan' uit te leggen.<br><br></p>
+                            <p><iframe frameborder="0"
+                                src="https://youtube.com/embed/z6KRVCpYjoA">
+                                </iframe>
+                            </p>
+                        </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+    
+
+    
+</html>

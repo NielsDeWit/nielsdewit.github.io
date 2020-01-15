@@ -1,0 +1,277 @@
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+
+html {
+    background-color: #84C2E2;
+    color: white; 
+    font-family: "Bahnschrift";
+    box-sizing: border-box;
+    background-image: url(Images/Achtergrond.png);
+    background-size: 15%;
+}
+
+.Tijdlijn {
+    font-size: 60px;
+}
+
+
+
+/* Eigen aanpassingen */
+.sidenav a.top{
+    background-color: #FDD16A;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.logonav{
+    padding: 10%;
+}
+
+.imgnav{
+    height: 17px;
+    width: 17px;
+    
+}
+
+.imgindex{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.imgindex:hover {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+/* Side menu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0EB9E3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 22.5px;
+  color: White;
+  display: block;
+  transition: 0.3s;
+}
+
+.panel {
+  text-align: left;
+  background-color: #1288C9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+  font-size: 18px;
+}
+
+img.footer{
+    background-color: #FDD16A;
+}
+
+.sidenav a.footer{
+    margin-top: 130%;
+    background-color: #F9B659;
+    padding-top: 10px;
+}
+
+.sidenav a.footer2{
+    background-color: #F9B659;
+    padding-top: 10px;
+    margin-bottom: 
+}
+
+
+.sidenav a:hover {
+  color: #84C2E2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.accordion {
+  padding-left: 10%;
+  text-align: left;
+  font-family: "Bahnschrift";
+  color: white;
+  background-color: #0EB9E3;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-bottom: bottom: 5px;
+  border: none;
+  outline: none;
+  font-size: 22.5px;
+  transition: 0.3s;
+}
+
+.active, .accordion:hover {
+  color: #84C2E2;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; 
+  font-size: 22.5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.active:after {
+  content: "\2212";
+}
+
+h1 {
+    margin-top: -40px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -20px
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #84C2E2;
+}
+
+p {
+    text-align: center;
+    padding-left: 10%;
+    Padding-right: 10%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.row{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Knopje */
+
+.button {
+  float: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #FDD16A;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #BA7420;
+    transition: 0.5s;
+}
+
+.button:active {
+  background-color: #BA7420;
+  box-shadow: 0px 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+   text-align: center;
+   font-size: 15px;
+   left: 0;
+   width: 100%;
+   background-color: #BA7420;
+   color: #FDD16A;
+   font-family: "Bahnschrift";
+   
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pirarocket | Nijl Kaart</title>
+        <link rel="icon" href="/Images/Logo-02.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="KaartNijl.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    </head>
+    
+    <body>
+        
+        <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/Index/index.html" class="top">
+                    <img class="imgnav" src="/Images/Logo-02.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="/Tijdlijn/Tijdlijn.html">
+                    <img class="imgnav" src="/Images/KlokNavIcon-06-06.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/PiramideNavIcnon-06.png" alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="/OverNijl/OverNijl.html">Over de Nijl Delta</a>
+                        <a href="/KaartNijl/KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="/Images/RacketNavIcnon-06.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="/OverGalveston/OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="/KaartGalveston/KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="/Over_ons/OverOns.html" class="footer">
+                    <img class="imgnav" src="/Images/OverOnsNavIcnon-06.png" alt="Piramide" width="100%">
+                    Over ons</a>
+                <a href="/Literatuurlijst/Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="/Images/LiteratuurlijstNavIcon-06.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu-->
+        
+        <h1>Nijl Kaart</h1>
+        <h2>Op deze pagina staat de informatie uit de tijdlijn en de pagina van de Nijldelta geplaatst op een kaart. Sleep, zoom en scroll door de kaart om te ondekken waar wat is gebeurd in deze eeuwen oude delta.       
+        </h2>
+        
+         <div id="mapid"></div>
+        
+        
+ <script> var mymap = L.map('mapid').setView([30.347050, 31.089907
+],7);L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+
+    maxZoom: 14,
+
+    id: 'mapbox.light',
+
+    accessToken: 'pk.eyJ1IjoibGlla2UxOCIsImEiOiJjam5yZDd0MnIwMW9wM3FzNXExMHJ6MG5nIn0.iyEfspnssHxzGdZDWa1_aA'
+
+}).addTo(mymap);
+    </script>
+        
+        <div class="container">
+            <!--Knopjes-->
+            <div class="knop">
+                <a href="/OverNijl/OverNijl.html">
+                <button class="button">
+                <img class="imgindex" src="images/MeerOver-02-02.png">
+                </button></a>
+            </div>
+
+            <div class="knop">
+                <a href="/Tijdlijn/Tijdlijn.html">
+                <button class="button">
+                <img class="imgindex" src="images/TerugTijdlijn-02.png">
+                </button></a> 
+                </div>
+        </div>
+
+        
+    </body>
+    
+</html>

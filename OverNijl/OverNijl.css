@@ -1,0 +1,175 @@
+/* Algemeen */
+html {
+    background-color: #84C2E2;
+    color: white; 
+    font-family: "Bahnschrift";
+    background-image: url(Images/Achtergrond.png);
+    background-size: 15%;
+}
+
+.plaatjuh img {
+    font-family: "Bahnschrift";
+    position: relative;
+    float:right;
+    width: 20%;
+    box-shadow: 0 10px #999;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-top: 2%;
+    border-radius: 15px;
+    z-index: 0;
+    }
+
+/* Eigen aanpassingen */
+.sidenav a.top{
+    background-color: #FDD16A;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.logonav{
+    padding: 10%;
+}
+
+.imgnav{
+    height: 17px;
+    width: 17px;
+    padding-right: 17px;
+}
+
+/* Side menu */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0EB9E3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 22.5px;
+  color: White;
+  display: block;
+  transition: 0.3s;
+}
+
+.panel {
+  text-align: left;
+  background-color: #1288C9;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+  font-size: 18px;
+}
+
+img.footer{
+    background-color: #FDD16A;
+}
+
+.sidenav a.footer{
+    margin-top: 130%;
+    background-color: #F9B659;
+    padding-top: 10px;
+}
+
+.sidenav a.footer2{
+    background-color: #F9B659;
+    padding-top: 10px;
+    margin-bottom: 
+}
+
+
+.sidenav a:hover {
+  color: #84C2E2;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.accordion {
+  padding-left: 10%;
+  text-align: left;
+  font-family: "Bahnschrift";
+  color: white;
+  background-color: #0EB9E3;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-bottom: bottom: 5px;
+  border: none;
+  outline: none;
+  font-size: 22.5px;
+  transition: 0.3s;
+}
+
+.active, .accordion:hover {
+  color: #84C2E2;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px; 
+  font-size: 22.5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+
+
+
+h1 {
+    padding-left: 10%;
+    font-size: 100%;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 17px;
+    padding-left: 10%;
+}
+
+p {
+    padding-left: 10%;
+    Padding-right: 10%;
+}
+
+footer {
+   text-align: center;
+   font-size: 15px;
+   Margin: 0px;
+   width: 100%;
+   background-color: #BA7420;
+   color: #FDD16A;
+   font-family:  "Bahnschrift";
+   
+}

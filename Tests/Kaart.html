@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="Kaart.css">
+        <link rel=stylesheet type="text/css" href="Kaart.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+        <title>Kaart</title>
+    </head>
+
+    <body>
+        <h1>Kaart</h1>
+        <p>Gaat het werken?</p>
+        <div id="mapid"></div>
+        
+        <script> var mymap = L.map('mapid').setView([-34.6076405504689,-58.38842555507813],11);L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+
+    maxZoom: 14,
+
+    id: 'mapbox.light',
+
+    accessToken: 'pk.eyJ1IjoibGlla2UxOCIsImEiOiJjam5yZDd0MnIwMW9wM3FzNXExMHJ6MG5nIn0.iyEfspnssHxzGdZDWa1_aA'
+
+}).addTo(mymap);
+
+                var marker = L.marker([-34.6065504,-58.410706800000014
+
+                ]).addTo(mymap);marker.bindPopup("<b>La Bomba de Tiempo</b><br>Een 17-delige groep die Argentijnse volkmuziek en samba combineerd met stijlen uit Afrika en Centraal Amerika. Ze spelen iedere maandagavond om 20.00 uur voor enkele uren. Daarna gaat het feest tot in de late uurtjes door in de straten die in de buurt liggen. Perfect begin voor een avondje uit dus.").openPopup()
+    </script>
+        
+    </body>
+
+</html>
