@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pirarocket | Literatuurlijst</title>
+        <link rel="icon" href="Images/NLogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/CSS" href="CSS/Literatuurlijst.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        
+  <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="top">
+                    <img class="imgnav" src="Images/NLogo.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="Tijdlijn.html">
+                    <img class="imgnav" src="Images/NTijdlijn.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NNijldelta.png" alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="OverNijl.html">Over de Nijl Delta</a>
+                        <a href="KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NGalveston.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="OverOns.html" class="footer">
+                    <img class="imgnav" src="Images/NOverOns.png" alt="Literatuurlijst" width="100%">
+                    Over ons</a>
+                <a href="Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="Images/NLiteratuurlijst.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu--> 
+        
+        <h1>Literatuurlijst</h1>
+        <h2>Als de informatie op deze website nog niet genoeg was, staat op deze pagina de lijst met bronnen die door het onderzoeksteam van Pirarocket is opgesteld.
+        </h2>
+		<h2>
+		Het Boek<br>
+		<a href="https://nl.japsambooks.nl/products/urbanized-deltas-in-transition" >Het boek Urban Deltas in transition staat vol met feitjes en vergelijkingen van de leukste/gekste/ grootste Delta s ter wereld. Mocht je geinteresseerd zijn in delta s dan is het zeker een aanrader</a> 
+		</h2>
+		
+		<h2>De Nijldelta<br>
+		<br><a href="https://www.digibron.nl/search/detail/012ea994f6c8cd26f882c0e6/aswandam">Aswandam en Nijldelta</a>
+		<br><a href="https://wikikids.nl/Irrigatielandbouw">Irrigatie</a>
+		<br><a href="http://www.water.nl/irrigatie.htm">Nog meer Irrigatie</a>
+		<br><a href="https://study.com/academy/lesson/nile-delta-facts-lesson-for-kids.html">Nog meer Nijldelta</a>
+		<br><a href="https://sciencing.com/nile-delta-7289614.html">Nog Nog meer Nijldelta</a>
+		</h2>
+		
+		<h2>Galveston Bay<br>
+		<br><a href="http://www.texasbest.com/houston/history.html">Houston Geschiedenis</a>
+		<br><a href="https://www.visithoustontexas.com/about-houston/history/">Nog meer Houston Geschiedenis</a>
+		<br><a href="https://www.galveston.com/history/">Galveston Geschiedenis</a>
+		<br><a href="https://spacecenter.org/about-us/">NASA Space Center</a>
+		<br><a href="https://www.hhc.org/About-Us/Houston-Healthcare-System-Locations/Houston-Medical-Center">Houston Medical Center</a>
+		<br><a href="https://www.galveston.com/pier21theatre/">Pier 21 Theatre</a>
+		
+		</h2>
+       
+		
+		
+    </body>
+    
+
+    
+</html>

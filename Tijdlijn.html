@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pirarocket | Tijdlijn</title>
+        <link rel="icon" href="Images/NLogo.png" type="image/gif" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+        <link rel="stylesheet" type="text/css" href="CSS/Tijdlijn.css">
+    </head>   
+
+    <body>
+        
+        <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="top">
+                    <img class="imgnav" src="Images/NLogo.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="Tijdlijn.html">
+                    <img class="imgnav" src="Images/NTijdlijn.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NNijldelta.png" " alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="OverNijl.html">Over de Nijl Delta</a>
+                        <a href="KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NGalveston.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="OverOns.html" class="footer">
+                    <img class="imgnav" src="Images/NOverOns.png" alt="Piramide" width="100%">
+                    Over ons</a>
+                <a href="Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="Images/NLiteratuurlijst.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu-->        
+        
+        <!--Introductie tekst-->
+        <h1>Tijdlijn</h1>
+        <h2>Op deze pagina vind je twee tijdlijnen over de twee delta's. Scroll, vergelijk en ontdek wat de delta's gemeen hebben of verschillen.
+        </h2>
+        
+        <!--Nijl Delta-->
+        <div class="container-main">
+            <!-- Intro tekst -->
+            <div class="container-fluid blue-bg">
+                <div class="container">
+                    <h1 class="pb-3 pt-2">Nijl Delta</h1>
+                    
+                        <!--S1 Nijl-->
+                         <div class="row align-items-center how-it-works">
+                              <div class="col-2 text-center bottom">
+                                 <div class="circle">6.000v.Chr</div>
+                              </div>
+                            <div class="col-6">
+                                <h5>Moderne boeren</h5>
+                                    <p>De Egyptenaren gebruiken als eerste ter wereld irrigatie om landbouw mogelijk te maken, in het droge landschap, langs de Nijldelta.</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                        <div class="col-8">
+                        <hr/>
+                        </div>
+                            
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                        
+                        </div>
+                    
+                        <!--S2 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Eerst een toren daara de rest</h5>
+                                <p>Onderaan de Nijldelta wordt een wachttoren gebouwd. Op dit vruchtbare stuk grond zal uit eindelijk de hoofdstad Cairo worden gesticht</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">400</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S3 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">937</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>De Overwinnaars</h5>
+                                <p>De stad onderaan de Nijldelta wordt Cairo genoemd. In het oud Arabisch betekend Cairo de overwinnaars</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S4 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>De eerste Dam</h5>
+                                <p>Er wordt een dam gebouwd bij het plaatsje Aswan, wat 700 kilometer ten noorden van Cairo ligt. Deze dam zal Egypte moeten beschermen tegen overstromingen en tegen droogte. Drie jaar later was de dam af</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1899</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S5 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1907</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Een kleine verbouwing van 5 jaar</h5>
+                                <p>De Aswandam was al 1900 meter lang en 54 meter hoog maar wordt alsnog verhoogd. Deze verhoging duurde 5 jaar</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S6 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Nog niet tevreden</h5>
+                                <p>17 jaar nadat de verhoging af was. Werd de dam weer verhoogd. Deze verhoging duurde weer 4 jaar</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1929</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S7 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1946</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Dit was de druppel!</h5>
+                                <p>De Aswandam liet zijn zwakte zien en overstroomde bijna. Dit was de druppel: De Nijl had aan een dam niet genoeg</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S8 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Een nieuwe Dam</h5>
+                                <p>Egypte wil samen met de hulp van de Verenigde Staten een nieuwe dam bouwen. 6 kilometer onder de oude dam. Maar nadat Egypte China als een republiek erkende weigerde de Verenigde staten nog te helpen</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1952</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S9 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1956</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Rusland mag in het vriendenboekje</h5>
+                                <p>Rusland besluit Egypte te helpen met het ontwerpen van de dam. Een Rus ontwerpt de dam en als dank daarvoor besluit Egypte een kunstwerk te maken als teken van vriendschap tussen de landen</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S10 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Een schokkend resultaat</h5>
+                                <p>De laatste steen wordt gelegd aan de nieuwe Aswandam. De nieuwe dam geeft meer zekerheid dat de Nijldelta niet overstroomd of uitdroogt. Daarnaast wekt de nieuwe dam ook stroom op</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1960</div>
+                            </div>
+                        </div>
+                        
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S11 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1973</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Toch weer een zwakke plek</h5>
+                                <p>Egypte raakt in oktober in oorlog met Israël. Israël heeft als noodplan om de Aswandam te bombarderen wat de dood van vele Egyptenaren zou betekenen. Gelukkig stopt de oorlog al na 20 dagen. Helaas geeft dit geen garantie voor de toekomst…</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                        
+                        <!--S12 Nijl-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Een moderne rivierstroom</h5>
+                                <p>De Aswandam wekt 15% van alle energie op die het land nodig heeft. Zo maken de Egyptenaren met de dam op een moderne manier goed gebruik van de Nijl</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1998</div>
+                            </div>
+                        </div>
+                        
+                    <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S13 Nijl-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">2019</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Een nog onbekend begin</h5>
+                                <p>Bij een archeologische opgraving worden er een Griekse tempel opgegraven die dateert uit de 3e en 4e eeuw voor Christus</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                            
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--Galveston Bay-->
+        <div class="container-main">
+            <!-- Intro tekst -->
+            <div class="container-fluid blue-bg">
+                <div class="container">
+                    <h1 class="pb-3 pt-2">Galvestone Bay</h1>
+                    
+                        <!--S1 Galvestone Bay-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Een koud begin</h5>
+                                <p>Het begin van de recentste ijstijd. Door deze ijstijd is de Galveston Bay ontstaan</p>
+                            </div>
+                            
+                            <div class="col-2 text-center bottom">
+                                <div class="circle">116.000v.Chr</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S2 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">11.700v.Chr</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Met de warme groeten</h5>
+                                <p>Het einde van de recentste ijstijd. Vanaf hier begon het ijs te smelten en steeg de zeespiegel</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S3 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Land in Zicht</h5>
+                                <p>Eerste ontdekking van de Galveston Bay door een fransman. Helaas is deze Fransman door de orginele bewoners gebruik als medicijn man en slaaf.</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1528</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S4 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1786</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Een Spaanse naam</h5>
+                                <p>Twee Spanjaarden brengen het gebied van de Galveston Bay in kaart en vernoemen het naar Bernardo de Galvez. Galvez gaf namellijk de opdracht aan de spanjaarden. Helaas is Galvez er zelf nooit geweest omdat hij kort hierna overleed</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S5 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Battle of Jacinto</h5>
+                                <p>Onder aanvoering van generaal Sam Houston won de Verenigde Staten de slag om San Jacinto van Mexico.</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1836</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S6 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1836</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Een Nieuwe Stad</h5>
+                                <p>Het gewonnen stuk land werd verkocht aan twee broers genaamd Augustus Allen en John Kriby Allen stichten een stad. De stad werd vernoemd naar Sam Houston, wie burgermeester van Texas werd.</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S7 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Cadeautje van Uncle Sam</h5>
+                                <p>Sam Houston zorgt er voor dat Houston een officiele stad met burgermeester wordt</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1837</div>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S8 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1900</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>De storm die alles veranderde</h5>
+                                <p>In Galveston komen 6.000 inwoners om en worden 3.600 gebouwen verwoest door de storm. Sinds dien staat de storm in Amerika bekend als <i>the great storm</i>. Na de storm is Galveston nooit meer de stad geworden die het ooit was.</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S9 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Olie en schepen</h5>
+                                <p>Op drie plekken rond Houston word er olie gevonden. Het kanaal naast Houston wordt ook uitgebaggerd. Dit samen zorgde ervoor dat Houston flink kon groeien als havenstad</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1901</div>
+                            </div>
+                        </div>
+                        
+                        <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S10 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1945</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Een gezonde stad</h5>
+                                <p>Naast de olie en schepen komt er nog meer werkgelegenheid in Houston waanneer het Houston Medical Center wordt geopend. Dit is tegenwoordig het grootste medisch centrum ter wereld</p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                        
+                        <!--S11 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Op naar de sterren en...</h5>
+                                <p>NASA besluit om haar ruimtevaartcentrum te stichten in Houston. In dit centrum worden alle missies van NASA geleid</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">1961</div>
+                            </div>
+                        </div>
+                        
+                    <!--Pad van rechts naar Links-->
+                        <div class="row timeline">
+                            <div class="col-2">
+                                <div class="corner right-bottom"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                                <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                                <div class="corner top-left"></div>
+                            </div>
+                        </div>
+                    
+                        <!--S12 Galveston-->
+                        <div class="row align-items-center how-it-works">
+                            <div class="col-2 text-center full">
+                                <div class="circle">1969</div>
+                            </div>
+                            
+                            <div class="col-6">
+                                <h5>Houston, the Eagle has landed</h5>
+                                <p>Door het ruimtevaartcentrum wordt door elke astronaut verwezen naar Houston als hij wat wil melden. Een voorbeeld waar het fout ging is de <i>Houston, we have a problem</i>. Maar toen de maanlanding was geslaagd was het eerste woord dat Neil Armstrong uitsprak <i>Houston</i> gevolgd met de zin <i>the Eagle has landed</i></p>
+                            </div>
+                        </div>
+                    
+                        <!--Pad van links naar rechts-->
+                        <div class="row timeline">
+                            
+                            <div class="col-2">
+                                <div class="corner top-right"></div>
+                            </div>
+                            
+                            <div class="col-8">
+                            <hr/>
+                            </div>
+                            
+                            <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                            </div>
+                        
+                        </div>
+                    
+                        <!--S13 Galveston-->
+                        <div class="row align-items-center justify-content-end how-it-works">
+                            <div class="col-6 text-right">
+                                <h5>Weer een strom?</h5>
+                                <p>Orkaan Rita zet koers richting Houston. Hiervoor wordt de hele stad ontruimt wat zorgde voor de grootste evacuatie in de Verenigde Staten ooit.</p>
+                            </div>
+                            
+                            <div class="col-2 text-center full">
+                                <div class="circle">2005</div>
+                            </div>
+                        </div>    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

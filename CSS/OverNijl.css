@@ -1,17 +1,4 @@
 /* Algemeen */
-#mapid { 
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-    height: 350px; 
-    text-align: center;
-    font-family: "Bahnschrift";
-    position: relative;
-    box-shadow: 0 10px #999;
-    border-radius: 15px;
-    z-index: 0;
-}
-
 html {
     background-color: #84C2E2;
     color: white; 
@@ -19,6 +6,20 @@ html {
     background-image: url(Images/Achtergrond.png);
     background-size: 15%;
 }
+
+.plaatjuh img {
+    font-family: "Bahnschrift";
+    position: relative;
+    float:right;
+    width: 20%;
+    box-shadow: 0 10px #999;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    margin-top: 2%;
+    border-radius: 15px;
+    z-index: 0;
+    }
 
 /* Eigen aanpassingen */
 .sidenav a.top{
@@ -43,7 +44,7 @@ html {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 5;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #0EB9E3;
@@ -147,20 +148,17 @@ img.footer{
 
 
 h1 {
-    text-align: center;
+    padding-left: 10%;
+    font-size: 100%;
     font-size: 50px;
-    margin-bottom: -20px
 }
 
 h2 {
-    text-align: center;
     font-size: 17px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
 }
 
 p {
-    text-align: center;
     padding-left: 10%;
     Padding-right: 10%;
 }
@@ -172,18 +170,34 @@ p {
 
 /* Container */
 
-.container{
-    padding-top: 20px;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 10%;
+.row{
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.knop {
-    float:left;
-    width: 35%;
-    padding-left: 5%;
-    padding-right: 5%;
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Knopje */
@@ -192,7 +206,6 @@ p {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -231,4 +244,8 @@ p {
   background-color: #BA7420;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.button img:hover {
+    opacity: 0.3;
 }

@@ -172,18 +172,34 @@ p {
 
 /* Container */
 
-.container{
-    padding-top: 20px;
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-bottom: 10%;
+.row{
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.knop {
-    float:left;
-    width: 35%;
-    padding-left: 5%;
-    padding-right: 5%;
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Knopje */
@@ -192,7 +208,6 @@ p {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -231,4 +246,8 @@ p {
   background-color: #BA7420;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.button img:hover {
+    opacity: 0.3;
 }

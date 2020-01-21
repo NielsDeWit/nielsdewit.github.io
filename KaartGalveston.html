@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Pirarocket | Galveston Bay Kaart</title>
+        <link rel="icon" href="Images/NLogo.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" type="text/CSS" href="CSS/KaartGalveston.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    </head>
+    
+    <body>
+        
+ <!--Menu-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="top">
+                    <img class="imgnav" src="Images/NLogo.png" alt="Piramide" width="100%">
+                    Thuis</a>
+                    
+                <a href="Tijdlijn.html">
+                    <img class="imgnav" src="Images/NTijdlijn.png" alt="Piramide" width="100%">
+                    Tijdlijn</a>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NNijldelta.png" alt="Piramide" width="100%">
+                        Nijl Delta</button>
+                    <div class="panel">
+                        <a href="OverNijl.html">Over de Nijl Delta</a>
+                        <a href="KaartNijl.html">Kaart</a>
+                    </div>
+                
+                    <button class="accordion">
+                        <img class="imgnav" src="Images/NGalveston.png" alt="Piramide" width="100%">
+                        Galveston Bay</button>
+                    <div class="panel">
+                        <a href="OverGalveston.html">Over de Galveston Bay</a>
+                        <a href="KaartGalveston.html">Kaart</a>
+                    </div>
+                
+                <a href="OverOns.html" class="footer">
+                    <img class="imgnav" src="Images/NOverOns.png" alt="Literatuurlijst" width="100%">
+                    Over ons</a>
+                <a href="Literatuurlijst.html" class="footer2">
+                    <img class="imgnav" src="Images/NLiteratuurlijst.png" alt="Literatuurlijst" width="100%">
+                    Literatuurlijst</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
+        <!--Einde menu--> 
+        
+        <h1>Galveston Bay Kaart</h1>
+        <h2>Op deze pagina staat de informatie uit de tijdlijn en de pagina van de Galveston Bay geplaatst op een kaart. Sleep, zoom en scroll door de kaart om te ondekken waar wat is gebeurd waardoor deze baai geworden is zoals hij nu is.       
+        </h2>
+        
+         <div id="mapid"></div>
+        
+        
+ <script> var mymap = L.map('mapid').setView([29.464950, -94.806618
+],9);L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+
+    maxZoom: 14,
+
+    id: 'mapbox.satellite',
+
+    accessToken: 'pk.eyJ1IjoibGlla2UxOCIsImEiOiJjam5yZDd0MnIwMW9wM3FzNXExMHJ6MG5nIn0.iyEfspnssHxzGdZDWa1_aA'
+
+}).addTo(mymap);
+    </script>
+        
+<script>
+    
+    
+    var marker = L.marker([29.603528, -94.956768]).addTo(mymap); 
+        marker.bindPopup("<b>Houston ship channel</b>Hier ligt het Houston Ship channel, waar grote boten kunnen aanmeren voor het leveren van goederen. Dit kanaal is begin 1900 uitgebaggerd na de vondst van olie in de buurt van Houston. Door het uitbaggeren kon Houston olie transporteren naar de hele wereld.<br>").openPopup();
+    
+     var marker = L.marker([29.558109, -95.089570]).addTo(mymap); 
+        marker.bindPopup("<b>NASA Ruimtevaartcentrum</b><br>In 1961 richtte NASA haar ruimtevaartcentrum op in Houston. Omdat Houston de thuisbasis is zeggen austronauten de naam van de stad als ze contact willen leggen met het centrum. Zo ook toen in 1969 de eerste man op de man landde: Houston, the eagle has landed. Houston was dus het eerste woord ooit gezegd op de maan.").openPopup();
+    
+    var marker = L.marker([29.707518, -95.400619]).addTo(mymap); 
+        marker.bindPopup("<b>Houston medisch centrum</b><br>In 1945 wordt in Houston een medisch centrum opgericht. Dit medisch centrum groeide samen met de stad heel hard. Tegenwoordig is het zelfs het grootste medisch centrum ter wereld.").openPopup();
+    
+    var marker = L.marker([29.760249, -95.369934]).addTo(mymap); 
+        marker.bindPopup("<b>Houston</b><br>Houston is vernoemd naar Sam Houston, de generaal die dit deel van Amerika veroverde van de Mexcan en tevens de eerste president van Texas. <br><br>Houston lijkt de grote broer van Galveston maar is eigenlijk jonger. De stad heeft zo kunnen groeien doordat er olie is gevonden in het gebied om de stad heen en omdat het kanaal goed toegankelijk is voor grote vrachtschepen.").openPopup();
+    
+    var marker = L.marker([29.309179, -94.792937]).addTo(mymap); 
+        marker.bindPopup("<b>Pier 21 Theater</b><br>In dit theater wordt dagelijks de film: The big Storm, vertoond. In deze film gaat over de grote storm van 1900. In deze storm werd Galveston flink geraakt met 6.000 slachtoffers en 3.600 verwoeste gebouwen als gevolg.").openPopup();
+    
+    var marker = L.marker([29.301136, -94.798012]).addTo(mymap); 
+        marker.bindPopup("<b>Galvestone</b><br>Galveston is vernoem naar Bernardo Galvez die opdracht had gegeven om het gebied in kaart te brengen. Helaas is Galvez kort daarna overleden en heeft hij nooit voet kunnen zetten op in zijn eigen stad. Tegenwoordig is Galveston .").openPopup();
+    
+    var marker = L.marker([29.471785, -94.769139]).addTo(mymap); 
+        marker.bindPopup("<b>De Galvestone Bay</b><br>Deze popup staat op het water van de Galvestone Bay. De Galveston Bay is een estuarium met veel geschiedenis. Deze geschiedenis wordt verteld op andere pagina's, op deze kaart is te zien waar alles is gebeurd.").openPopup();
+
+</script>
+        
+        <div class="row">
+                        
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <p>
+                            <a href="OverGalveston.html">
+                            <button class="button">
+                            <img class="imgindex" src="Images/MeerGalveston.png">
+                            </button></a>
+                            </p>    
+                        </div>
+                </div>
+            </div>
+            
+            
+                        
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <p>
+                            <a href="index.html">
+                            <button class="button">
+                            <img class="imgindex" src="Images/TerugThuis.png"s>
+                            </button></a> 
+                            </p>    
+                        </div>
+                </div>
+            </div>  
+                        
+            <div class="column">
+                <div class="card">
+                        <div class="container">
+                            <p>
+                            <a href="Tijdlijn.html">
+                            <button class="button">
+                            <img class="imgindex" src="Images/TerugTijdlijn.png">
+                            </button></a> 
+                            </p>    
+                        </div>
+                </div>
+            </div>            
+        </div>
+
+        
+    </body>
+    
+</html> 
